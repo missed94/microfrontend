@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, // позволяет импортировать вместо import * as React from 'react' - import React from 'react', если какая либо либе не имеет дефолтного импорта
+    "esModuleInterop": true, //позволяет работать с пакетами которые используют commonJs(require("/path")), чтоб можно было импортировать через привычный import
+    "composite": true
+  },
+}

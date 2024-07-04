@@ -1,0 +1,10 @@
+.button {
+  background-color: red;
+  padding: 20px;
+  &:hover {
+    background-color: blue;
+  }
+}
+.value {
+  font-size: 24px;
+}

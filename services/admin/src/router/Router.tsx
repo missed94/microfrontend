@@ -5,11 +5,11 @@ import { About } from "@/pages/About";
 
 const routes = [
   {
-    path: "/",
+    path: "/admin",
     element: <App />,
     children: [
       {
-        path: "/about",
+        path: "/admin/about",
         element: <Suspense fallback={"...Loading"}><About /></Suspense>
       }
     ]

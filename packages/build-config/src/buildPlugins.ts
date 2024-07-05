@@ -15,7 +15,10 @@ export function buildPlugins(options: BuildOptions): Configuration["plugins"] {
   const plugins: Configuration["plugins"] = [
     new HtmlWebpackPlugin({
       template: options.paths.html, // plugin для сборки html, подставляет нужные скрипты в результате сборки
-      favicon: path.resolve(options.paths.public, "favicon.ico") }), // фавиконка
+      favicon: path.resolve(options.paths.public, "favicon.ico"), // фавиконка
+      publicPath: "/",
+    }),
+
     new DefinePlugin({
       __PLATFORM__: JSON.stringify(options.platform), // plugin для использования каких либо переменных из окружения webpack будь то env или еще что либл
     }),
